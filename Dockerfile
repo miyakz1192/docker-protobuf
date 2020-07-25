@@ -142,6 +142,6 @@ RUN apk add --no-cache bash libstdc++ && \
     ln -s /usr/bin/grpc_csharp_plugin /usr/bin/protoc-gen-grpc-csharp && \
     ln -s /usr/bin/grpc_node_plugin /usr/bin/protoc-gen-grpc-js && \
     ln -s /usr/bin/grpc_python_plugin /usr/bin/protoc-gen-grpc-python && \
-    ln -s /usr/bin/grpc_python_plugin /usr/bin/protoc-gen-grpc-ruby
+    ln -s /usr/bin/grpc_ruby_plugin /usr/bin/protoc-gen-grpc-ruby
 COPY protoc-wrapper /usr/bin/protoc-wrapper
 ENTRYPOINT ["protoc-wrapper", "-I/usr/include"]
